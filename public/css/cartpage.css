@@ -1,0 +1,19 @@
+.submit-qty input[type="submit"]{
+    text-decoration: none;
+    color: blue;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    transition: .3s ease;
+}
+
+a:hover{
+    transition: .3s ease;
+    color: red;
+}

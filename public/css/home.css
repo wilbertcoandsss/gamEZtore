@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+html {
+    background-color: #1B222C;
+}
+
+body{
+    background-color: #1B222C;
+    color: aliceblue;
+}
+
+body h3{
+    font-family: 'Alegreya', serif;
+}
+
+body h4{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.parents{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #111111;
+    position: relative;
+    z-index: 2;
+}
+
+.burger-icon {
+    width: 25px;
+    height: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.main{
+    margin-top: 60px;
+}
+
+.profile-pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+}
+
+.auth-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 150px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    flex-direction: row;
+    transition: .3s ease;
+}
+
+.dropdown-content {
+    left : -195%;
+    display: none;
+    margin-top: 6px;
+    position: absolute;
+    background-color: #293444;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: .3s ease;
+}
+
+.line{
+    width: 85%;
+    margin: auto;
+    line-height: 5px;
+}
+
+.cart-img{
+    width: 45px;
+    height: 28px;
+}
+
+.dropdown-content a {
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: .3s ease;
+}
+
+.greetings{
+    padding: 12px 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: gainsboro;
+    color: #111111;
+    transition: .3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: .3s ease;
+}
+
+.dropdown:hover .dropbtn {
+    filter: brightness(70%);
+    transition: .3s ease;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    width: 450px;
+    border-radius: 5px;
+    padding: 9px;
+    border: 1px solid rgb(188, 187, 187);
+    padding-left: 35px;
+    align-items: center;
+    background-color: #181A1B;
+    color: whitesmoke;
+}
+
+.logo {
+    width: 170px;
+}
+
+.search-logo {
+    width: 13px;
+    height: 13px;
+    align-items: center;
+}
+
+.admin-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 350px;
+    margin-left: -130px;;
+    font-size: 17px;
+}
+
+.manage-game-btn, .manage-game-genre-btn{
+    background: none;
+    border: none;
+    color: white;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.manage-game-btn:hover, .manage-game-genre-btn:hover{
+    color: red;
+    transition: .3s ease;
+}
+
+
+form button[type="submit"] {
+    margin-left: 8px;
+    position: absolute;
+    background: transparent;
+    border: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.regist-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.regist-nav div button {
+    margin: 10px;
+}
+
+.sign-in-btn {
+    background: transparent;
+    border-radius: 5px;
+    border: none;
+    width: 75px;
+    align-items: center;
+    transition: .3s ease;
+    color: white;
+    font-size: 17px;
+    padding: 5px;
+}
+
+.sign-up-btn {
+    background: transparent;
+    border-radius: 5px;
+    border: none;
+    width: 75px;
+    align-items: center;
+    transition: .3s ease;
+    color: white;
+    font-size: 17px;
+    padding: 5px;
+}
+
+
+.sign-in-btn:hover {
+    transition: .3s ease;
+    color: red;
+    cursor: pointer;
+}
+
+.sign-up-btn:hover {
+    transition: .3s ease;
+    color: red;
+    cursor: pointer;
+}
+
+.content-wrap{
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-wrap a{
+    text-decoration: none;
+    color: black;
+}
+
+.content-box{
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    height: 350px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    border-radius: 40px;
+    background-color: #293444;
+    color: #C9CCD0;
+    box-shadow: #111111 1px 1px;
+}
+
+.content-box:hover{
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.game-genre{
+    background-color: #C21F1E;
+    color: #C9CCD0;
+    border-radius: 15px;
+    width: 100px;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.game-genre-icon{
+    background-color: #d1fae5;
+    color: #429182;
+    border-radius: 15px;
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.game-pic{
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+
+.game-pic-icon{
+    margin-bottom: 8px;
+    margin-top: 8px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.line-games{
+    width: 115%;
+    height: 1px;
+    background-color: rgb(5, 5, 57);
+    margin-top: auto;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.game-price{
+    align-items: center;
+    text-align: center;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.results{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.pagination{
+    float: right;
+    display: inline;
+    margin-right: 75px;
+}
+
+.pagination-content{
+    background-color: #353535;
+    border: 1px solid #302e2e;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 20px;
+}
+
+.main-wrap-profile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 90px;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: -95px;
+}
+
+.profile h1{
+    margin-left: 15px;
+}
+
+.account h1{
+    margin-left: 18px;
+}
+
+.account{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: -120px;
+}
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-insert{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-insert-special{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-content-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-content-1 label{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: right;
+    width: 400px;
+    align-items: center;
+}
+
+.form-content-1 input{
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+}
+
+.form-content label{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: right;
+    width: 400px;
+    align-items: center;
+}
+
+.form-content input, .form-content textarea{
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid #111111;
+    background-color: #181A1B;
+    color: whitesmoke;
+}
+
+.form-content-1 input{
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #111111;
+    background-color: #181A1B;
+    color: whitesmoke;
+}
+
+.form-content select{
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    width: 430px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+}
+
+.form-insert input[type="submit"]{
+    margin-left: 690px;
+    width: 150px;
+    background-color: #293444;
+    transition: .3s ease;
+}
+
+#photoInsert{
+    border: none;
+    margin-left: -13px;
+    margin-top: 12px;
+}
+
+.error-msg{
+    text-align: right;
+    margin-right: 15px;
+    color: red;
+}
+
+.form-insert input[type="submit"]:hover{
+    background-color: red;
+    transition: .3s ease;
+    color: white;
+}
+
+.profile-pic-new{
+    margin-left: -5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.line-break{
+    width: 94%;
+}
+
+.line-break-1{
+    width: 96%;
+}
+
+.alert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    background-color:#d5edda;
+    color: #2a6537;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.success-alert{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    height: 70px;
+    align-items: center;
+    color: #bdbcc6;
+    font-weight: 2px;
+    position: sticky;
+    margin-top: 45px;
+}
+
+body{ margin:0; }
+
+.nav-bar{ min-height:50px; }
+
+@media screen and (max-width: 770px){
+
+    .admin-nav{
+        width: 320px;
+        margin-left: 0px;
+    }
+
+    .nav-bar{
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: space-around;
+    }
+
+    .search-bar input[type="text"]{
+        width: 140px;
+
+    }
+
+    .form-content-1 input{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .dropdown-content {
+        left : -85%;
+    }
+
+    .admin-nav{
+        margin-left: 0px;
+        align-items: center;
+    }
+
+    .logo-regist{
+        width: 250px;
+    }
+    .nav-bar{
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    .nav-bar div{
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    .search-bar input[type="text"]{
+        width: 225px;
+        margin-top: 10px;
+    }
+}

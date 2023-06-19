@@ -1,0 +1,27 @@
+.tr-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.tr-top h1{
+    margin: 0;
+}
+
+.top-con h1 {
+    text-align: left;
+    margin-top: 25px;
+    font-size: 45px;
+}
+
+.tr-bot h1{
+    text-align: right;
+}
+
+@media screen and (max-width: 770px){
+
+    .top-con h1{
+        font-size: 34px;
+    }
+}

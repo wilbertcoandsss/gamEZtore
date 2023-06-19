@@ -1,0 +1,132 @@
+h1{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 410px;
+    /* align-items: center; */
+    padding: 25px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    background-color: #293444;
+    border: 1.5px ridge rgb(181, 181, 181);
+}
+
+.logo-regist{
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+.form-container input{
+    width: 390px;
+    border-radius: 5px;
+    padding: 9px;
+    border: 1px solid grey;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.form-container input[type="checkbox"]{
+    width: 18px;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.form-content-new{
+    margin-top: 8px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.form-content-new-radio{
+    margin-top: 8px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.form-content-cookies{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+label{
+    align-items: center;
+}
+
+input[type="radio"]{
+    width: 12px;
+    height: 12px;
+    margin-left: 2px;
+    margin-right: 10px;
+}
+
+#femaleInsert{
+    margin-left: 125px;
+}
+
+input[type="submit"]{
+    transition: .3s ease;
+    width: 410px;
+    align-items: center;
+    border: 1px solid #111111;
+    background-color: #353535;
+    color: whitesmoke;
+}
+
+input[type="submit"]:hover{
+    transition: .3s ease;
+    background-color: #C21F1E;
+    color: whitesmoke;
+}
+
+.error-msg{
+    color: red;
+}
+
+@media screen and (max-width: 430px) {
+    .logo-regist{}
+
+    .form-container{
+        width: 330px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-container input{
+        width: 200px;
+    }
+    .form-content-new{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #femaleInsert{
+        margin-left: 0px;
+    }
+
+    .form-content-new-radio{
+        display: flex;
+        flex-direction: column;
+    }
+
+    input[type = "radio"]{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}

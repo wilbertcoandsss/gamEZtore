@@ -1,0 +1,10 @@
+.form-content select{
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    width: 430px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+}
+
